@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Navami 2026 | Alkasa Society</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF9933; /* Saffron */
+            --secondary: #D4AF37; /* Gold */
+            --dark: #1a1a1a;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, #FF9933 0%, #FF5E00 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: #fdf5e6; color: var(--dark); line-height: 1.6; }
+
+        /* Header */
+        header {
+            background: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Sundar Kand Mandali.jpeg');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 5px solid var(--secondary);
+        }
+
+        h1 { font-family: 'Cinzel', serif; font-size: 2.2rem; color: var(--secondary); margin-bottom: 10px; }
+        .event-meta { font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+
+        /* Navigation Tabs */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .tab-link {
+            padding: 15px 10px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #666;
+            flex: 1;
+            text-align: center;
+            transition: 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab-link.active { color: var(--primary); border-bottom: 3px solid var(--primary); }
+
+        /* Content Sections */
+        .container { padding: 25px 20px; max-width: 600px; margin: auto; }
+        .tab-content { display: none; animation: fadeIn 0.5s ease; }
+        .tab-content.active { display: block; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Cards & UI */
+        .card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--secondary);
+        }
+
+        h2 { color: var(--primary); margin-bottom: 15px; font-family: 'Cinzel', serif; }
+        .highlight { color: #d32f2f; font-weight: 700; }
+        
+        .btn {
+            display: block;
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        .prize-tag {
+            background: #ffd700;
+            color: #000;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        ul { list-style: none; }
+        li { margin-bottom: 10px; position: relative; padding-left: 25px; }
+        li::before { content: '🚩'; position: absolute; left: 0; }
+
+        footer { text-align: center; padding: 30px; font-size: 0.9rem; color: #777; }
+    </style>
+</head>
+<body>
+
+<header>
+    <p class="event-meta">Alkasa Co-Op Society Presents</p>
+    <h1>श्री राम जन्मोत्सव 2026</h1>
+    <p>28 March | 4:00 PM onwards</p>
+</header>
+
+<nav>
+    <div class="tab-link active" onclick="openTab(event, 'event')">Event</div>
+    <div class="tab-link" onclick="openTab(event, 'volunteers')">Volunteers</div>
+    <div class="tab-link" onclick="openTab(event, 'competition')">Competition</div>
+</nav>
+
+<div class="container">
+    
+    <div id="event" class="tab-content active">
+        <div class="card">
+            <h2>Main Highlights</h2>
+            <ul>
+                <li><strong>Sundar Kand:</strong> Musical Path by professionals (Aparna Agrawal & team)</li>
+                <li><strong>Firework Show:</strong> A mesmerising display of lights</li>
+                <li><strong>Mahaprashad:</strong> Dinner following the prayers</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Venue</h2>
+            <p>📍 <strong>Alkasa Society Lawn Area</strong><br>Pune, Maharashtra</p>
+            <a href="https://maps.google.com" class="btn">View on Maps</a>
+        </div>
+    </div>
+
+    <div id="volunteers" class="tab-content">
+        <div class="card">
+            <h2>📸 Photography Team</h2>
+            <p>Requirement: 2-3 People</p>
+            <ul>
+                <li>DSLR Preferred (but not mandatory)</li>
+                <li>We have <strong>2 DSLRs available</strong> for use</li>
+                <li>Task: Capture key moments of the event</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>🍛 Mahaprasad Seva</h2>
+            <ul>
+                <li>Help in distribution and management</li>
+                <li>Open for both Kids and Adults</li>
+            </ul>
+        </div>
+        <div class="card" style="border-left-color: #d32f2f;">
+            <p>⏰ <strong>Reporting Time:</strong> 7:00 PM</p>
+            <p>📍 <strong>Location:</strong> Lawn Area</p>
+            <a href="tel:9140849954" class="btn">Contact to Join</a>
+        </div>
+    </div>
+
+    <div id="competition" class="tab-content">
+        <div class="card" style="text-align: center;">
+            <div class="prize-tag">WIN ₹1000 🏆</div>
+            <h2>Reel Competition</h2>
+            <p>Show your creativity and devotion!</p>
+        </div>
+        
+        <div class="card">
+            <h3>Guidelines</h3>
+            <ul>
+                <li><strong>Dates:</strong> 28 March to 30 March</li>
+                <li><strong>Result:</strong> After 7 days (Based on Views)</li>
+                <li><strong>Rules:</strong> Must be original content from the Alkasa event.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Mandatory Hashtags</h3>
+            <p style="color: var(--primary); font-weight: bold;">#alkasa-society-pune #ramnavami2026</p>
+            <p style="font-size: 0.85rem; margin-top: 10px;">Note: Tag the society location and keep your account Public.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>Jai Shree Ram 🚩</p>
+    <p>For queries: 9140849954</p>
+</footer>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab-link");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        window.scrollTo(0,0);
+    }
+</script>
+
+</body>
+</html>
