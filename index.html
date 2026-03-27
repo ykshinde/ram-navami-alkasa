@@ -9,7 +9,7 @@
         :root {
             --primary: #FF9933; /* Saffron */
             --secondary: #D4AF37; /* Gold */
-            --dark: #1a1a1a;
+            --dark: #2c1a0a;
             --white: #ffffff;
             --gradient: linear-gradient(135deg, #FF9933 0%, #FF5E00 100%);
         }
@@ -22,15 +22,13 @@
             background: var(--dark);
             color: var(--white);
             text-align: center;
-            padding: 40px 20px;
-            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Sundar Kand Mandali.jpeg');
-            background-size: cover;
-            background-position: center;
+            padding: 50px 20px;
             border-bottom: 5px solid var(--secondary);
+            background: linear-gradient(rgba(44, 26, 10, 0.9), rgba(44, 26, 10, 0.9));
         }
 
         h1 { font-family: 'Cinzel', serif; font-size: 2.2rem; color: var(--secondary); margin-bottom: 10px; }
-        .event-meta { font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+        .event-meta { font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--primary); }
 
         /* Navigation Tabs */
         nav {
@@ -52,69 +50,81 @@
             text-align: center;
             transition: 0.3s;
             border-bottom: 3px solid transparent;
+            font-size: 0.9rem;
         }
 
         .tab-link.active { color: var(--primary); border-bottom: 3px solid var(--primary); }
 
         /* Content Sections */
-        .container { padding: 25px 20px; max-width: 600px; margin: auto; }
-        .tab-content { display: none; animation: fadeIn 0.5s ease; }
+        .container { padding: 20px 15px; max-width: 600px; margin: auto; }
+        .tab-content { display: none; animation: fadeIn 0.4s ease; }
         .tab-content.active { display: block; }
 
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 
         /* Cards & UI */
         .card {
             background: var(--white);
-            border-radius: 15px;
+            border-radius: 12px;
             padding: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            border-left: 5px solid var(--secondary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--secondary);
         }
 
-        h2 { color: var(--primary); margin-bottom: 15px; font-family: 'Cinzel', serif; }
-        .highlight { color: #d32f2f; font-weight: 700; }
+        .poster-img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 { color: var(--primary); margin-bottom: 15px; font-family: 'Cinzel', serif; font-size: 1.4rem; }
+        h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--dark); }
         
         .btn {
             display: block;
             background: var(--gradient);
             color: white;
             text-align: center;
-            padding: 12px;
+            padding: 14px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
             margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(255, 153, 51, 0.3);
         }
+
+        .wa-btn { background: #25D366; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); }
 
         .prize-tag {
             background: #ffd700;
             color: #000;
-            padding: 5px 15px;
+            padding: 4px 12px;
             border-radius: 50px;
             font-weight: bold;
             display: inline-block;
             margin-bottom: 10px;
+            font-size: 0.8rem;
         }
 
         ul { list-style: none; }
-        li { margin-bottom: 10px; position: relative; padding-left: 25px; }
+        li { margin-bottom: 10px; position: relative; padding-left: 28px; font-size: 0.95rem; }
         li::before { content: '🚩'; position: absolute; left: 0; }
 
-        footer { text-align: center; padding: 30px; font-size: 0.9rem; color: #777; }
+        footer { text-align: center; padding: 40px 20px; font-size: 0.85rem; color: #888; background: #fffcf5; }
     </style>
 </head>
 <body>
 
 <header>
-    <p class="event-meta">Alkasa Co-Op Society Presents</p>
-    <h1>श्री राम जन्मोत्सव 2026</h1>
-    <p>28 March | 4:00 PM onwards</p>
+    <p class="event-meta">Alkasa Co-Op Society</p>
+    <h1>श्री राम जन्मोत्सव</h1>
+    <p>Saturday, 28 March 2026</p>
 </header>
 
 <nav>
-    <div class="tab-link active" onclick="openTab(event, 'event')">Event</div>
+    <div class="tab-link active" onclick="openTab(event, 'event')">Utsav Details</div>
     <div class="tab-link" onclick="openTab(event, 'volunteers')">Volunteers</div>
     <div class="tab-link" onclick="openTab(event, 'competition')">Competition</div>
 </nav>
@@ -123,72 +133,75 @@
     
     <div id="event" class="tab-content active">
         <div class="card">
+            <img src="Sundar Kand Mandali.jpeg" alt="Sundar Kand Mandali" class="poster-img">
             <h2>Main Highlights</h2>
             <ul>
-                <li><strong>Sundar Kand:</strong> Musical Path by professionals (Aparna Agrawal & team)</li>
-                <li><strong>Firework Show:</strong> A mesmerising display of lights</li>
-                <li><strong>Mahaprashad:</strong> Dinner following the prayers</li>
+                <li><strong>संगीतसमय सुंदरकांड:</strong> Professional recital by Aparna Agrawal (Pune) & Mandali.</li>
+                <li><strong>Firework Show:</strong> A grand mesmerizing display to celebrate the birth of Prabhu Shri Ram.</li>
+                <li><strong>Mahaprashad:</strong> Sacred dinner for all devotees following the path.</li>
             </ul>
         </div>
         <div class="card">
-            <h2>Venue</h2>
-            <p>📍 <strong>Alkasa Society Lawn Area</strong><br>Pune, Maharashtra</p>
-            <a href="https://maps.google.com" class="btn">View on Maps</a>
+            <h2>Schedule & Venue</h2>
+            <p>⏰ <strong>Time:</strong> 4:00 PM onwards</p>
+            <p>📍 <strong>Location:</strong> Alkasa Society Lawn Area</p>
         </div>
     </div>
 
     <div id="volunteers" class="tab-content">
         <div class="card">
             <h2>📸 Photography Team</h2>
-            <p>Requirement: 2-3 People</p>
+            <p style="margin-bottom: 10px;">Requirement: 2-3 Passionate people</p>
             <ul>
-                <li>DSLR Preferred (but not mandatory)</li>
-                <li>We have <strong>2 DSLRs available</strong> for use</li>
-                <li>Task: Capture key moments of the event</li>
+                <li>DSLR Preferred.</li>
+                <li>If you don't have one, we have <strong>2 DSLRs available</strong> for your use.</li>
+                <li>Task: Capture the most beautiful moments of the evening.</li>
             </ul>
         </div>
         <div class="card">
             <h2>🍛 Mahaprasad Seva</h2>
             <ul>
-                <li>Help in distribution and management</li>
-                <li>Open for both Kids and Adults</li>
+                <li>Collaboration in distribution and management.</li>
+                <li>Kids and Adults are all welcome to contribute.</li>
             </ul>
         </div>
-        <div class="card" style="border-left-color: #d32f2f;">
-            <p>⏰ <strong>Reporting Time:</strong> 7:00 PM</p>
-            <p>📍 <strong>Location:</strong> Lawn Area</p>
-            <a href="tel:9140849954" class="btn">Contact to Join</a>
+        <div class="card" style="border-top-color: #d32f2f;">
+            <p>⏰ <strong>Reporting:</strong> 7:00 PM at the Lawn Area</p>
+            <a href="https://chat.whatsapp.com/FXxh7v7GmIrHcviBReoGX0" class="btn wa-btn">Join Volunteers WhatsApp Group</a>
         </div>
     </div>
 
     <div id="competition" class="tab-content">
         <div class="card" style="text-align: center;">
-            <div class="prize-tag">WIN ₹1000 🏆</div>
+            <div class="prize-tag">WINNER PRIZE: ₹1000 🏆</div>
             <h2>Reel Competition</h2>
-            <p>Show your creativity and devotion!</p>
+            <p>Capture the essence of Ram Navami at Alkasa!</p>
         </div>
         
         <div class="card">
-            <h3>Guidelines</h3>
+            <h3>How to Participate</h3>
             <ul>
-                <li><strong>Dates:</strong> 28 March to 30 March</li>
-                <li><strong>Result:</strong> After 7 days (Based on Views)</li>
-                <li><strong>Rules:</strong> Must be original content from the Alkasa event.</li>
+                <li><strong>Posting Window:</strong> 28 March – 30 March.</li>
+                <li><strong>Platform:</strong> Instagram Reel (Public Account).</li>
+                <li><strong>Selection:</strong> Winner decided by highest views after 7 days.</li>
             </ul>
         </div>
 
         <div class="card">
-            <h3>Mandatory Hashtags</h3>
-            <p style="color: var(--primary); font-weight: bold;">#alkasa-society-pune #ramnavami2026</p>
-            <p style="font-size: 0.85rem; margin-top: 10px;">Note: Tag the society location and keep your account Public.</p>
+            <h3>Mandatory Rules</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 10px;">Must use these hashtags to be eligible:</p>
+            <p style="color: var(--primary); font-weight: bold; background: #fff3e6; padding: 10px; border-radius: 5px; font-size: 0.85rem;">
+                #alkasa-society-pune #ramnavami2026
+            </p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">* Ensure you tag the society location in your post.</p>
         </div>
     </div>
 
 </div>
 
 <footer>
-    <p>Jai Shree Ram 🚩</p>
-    <p>For queries: 9140849954</p>
+    <p>जय श्री राम 🚩</p>
+    <p style="margin-top: 5px;">For Any Query Call or DM: 9140849954</p>
 </footer>
 
 <script>
