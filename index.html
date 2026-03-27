@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
             text-align: center;
             padding: 50px 20px;
             border-bottom: 5px solid var(--secondary);
-            background: linear-gradient(rgba(44, 26, 10, 0.9), rgba(44, 26, 10, 0.9));
+            background: linear-gradient(rgba(44, 26, 10, 1), rgba(44, 26, 10, 1));
         }
 
         h1 { font-family: 'Cinzel', serif; font-size: 2.2rem; color: var(--secondary); margin-bottom: 10px; }
@@ -50,7 +50,7 @@
             text-align: center;
             transition: 0.3s;
             border-bottom: 3px solid transparent;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         .tab-link.active { color: var(--primary); border-bottom: 3px solid var(--primary); }
@@ -79,8 +79,8 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        h2 { color: var(--primary); margin-bottom: 15px; font-family: 'Cinzel', serif; font-size: 1.4rem; }
-        h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--dark); }
+        h2 { color: var(--primary); margin-bottom: 15px; font-family: 'Cinzel', serif; font-size: 1.4rem; line-height: 1.3; }
+        h3 { font-size: 1.1rem; margin-bottom: 12px; color: var(--dark); border-bottom: 1px solid #eee; padding-bottom: 5px; }
         
         .btn {
             display: block;
@@ -100,17 +100,31 @@
         .prize-tag {
             background: #ffd700;
             color: #000;
-            padding: 4px 12px;
+            padding: 6px 18px;
             border-radius: 50px;
             font-weight: bold;
             display: inline-block;
-            margin-bottom: 10px;
-            font-size: 0.8rem;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         ul { list-style: none; }
-        li { margin-bottom: 10px; position: relative; padding-left: 28px; font-size: 0.95rem; }
+        li { margin-bottom: 12px; position: relative; padding-left: 28px; font-size: 0.95rem; }
         li::before { content: '🚩'; position: absolute; left: 0; }
+
+        .rules-list li { padding-left: 30px; }
+        .rules-list li::before { content: '📌'; }
+
+        .tip-box {
+            background: #fff9e6;
+            border: 1px dashed var(--primary);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
 
         footer { text-align: center; padding: 40px 20px; font-size: 0.85rem; color: #888; background: #fffcf5; }
     </style>
@@ -120,7 +134,7 @@
 <header>
     <p class="event-meta">Alkasa Co-Op Society</p>
     <h1>श्री राम जन्मोत्सव</h1>
-    <p>Saturday, 28 March 2026</p>
+    <p>शनिवार, 28 मार्च 2026</p>
 </header>
 
 <nav>
@@ -173,27 +187,35 @@
 
     <div id="competition" class="tab-content">
         <div class="card" style="text-align: center;">
-            <div class="prize-tag">WINNER PRIZE: ₹1000 🏆</div>
-            <h2>Reel Competition</h2>
-            <p>Capture the essence of Ram Navami at Alkasa!</p>
-        </div>
-        
-        <div class="card">
-            <h3>How to Participate</h3>
-            <ul>
-                <li><strong>Posting Window:</strong> 28 March – 30 March.</li>
-                <li><strong>Platform:</strong> Instagram Reel (Public Account).</li>
-                <li><strong>Selection:</strong> Winner decided by highest views after 7 days.</li>
-            </ul>
+            <h2>🎥✨ राम नवमी Reel Competition ✨🎥</h2>
+            <p style="font-size: 0.95rem; margin-top: 10px;">अपनी भक्ति, उत्साह और creativity को Reel के माध्यम से दिखाइए 🎬</p>
         </div>
 
         <div class="card">
-            <h3>Mandatory Rules</h3>
-            <p style="font-size: 0.9rem; margin-bottom: 10px;">Must use these hashtags to be eligible:</p>
-            <p style="color: var(--primary); font-weight: bold; background: #fff3e6; padding: 10px; border-radius: 5px; font-size: 0.85rem;">
-                #alkasa-society-pune #ramnavami2026
-            </p>
-            <p style="font-size: 0.8rem; margin-top: 10px;">* Ensure you tag the society location in your post.</p>
+            <div class="prize-tag">💰 Prize: ₹1000 (Highest Views)</div>
+            <h3>🏆 Competition Details</h3>
+            <ul>
+                <li><strong>📅 Event Date:</strong> 28 मार्च</li>
+                <li><strong>📱 Platform:</strong> Instagram Reel</li>
+                <li><strong>⏳ Posting Window:</strong> 28 मार्च से 30 मार्च तक</li>
+                <li><strong>🗓 Result:</strong> 7 दिन बाद (Views के आधार पर)</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h3>📌 Rules & Guidelines</h3>
+            <ul class="rules-list">
+                <li>Reel 28 मार्च के इवेंट से संबंधित होनी चाहिए (सुंदरकांड / महाप्रसाद / भक्ति माहौल / सजावट / moments)</li>
+                <li>Reel public account से पोस्ट करनी अनिवार्य है</li>
+                <li>नीचे दिए गए hashtags अनिवार्य हैं: <br><strong>#alkasa-society-pune</strong> <br><strong>#ramnavami2026</strong></li>
+                <li>सभी प्रतिभागियों को Reel में society या event location tag करना होगा</li>
+                <li>Reel original content होना चाहिए (no copied videos)</li>
+                <li>Multiple entries allowed, but best performing reel ही consider होगी</li>
+                <li>Final winner का निर्णय views count (after 7 days) के आधार होगा</li>
+            </ul>
+            <div class="tip-box">
+                👉 <strong>Tip:</strong> जितना जल्दी पोस्ट करेंगे, उतने ज्यादा views आने के chances!
+            </div>
         </div>
     </div>
 
